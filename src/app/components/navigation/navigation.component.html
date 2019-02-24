@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/">Ghibli</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" (click)="toggleCollapsed()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarSupportedContent" [ngClass]="{'collapse': collapsed, 'navbar-collapse': true }">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+          true}"><a class="nav-link" routerLink="/">Home</a></li>
+        <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/films">Films</a></li>
+        <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/people">People</a></li>
+        <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/locations">Locations</a></li>
+      </ul>
+    </div>
+  </nav>
+  

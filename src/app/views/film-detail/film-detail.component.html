@@ -1,0 +1,11 @@
+<div class="jumbotron">
+  <h1 class="display-4">{{film ? film.title: ""}}</h1>
+  <p class="lead">{{film ? film.description : "" }}</p>
+  <hr class="my-4" />
+  <p>
+    Directed by {{film ? film.director : "" }}, Produced by {{film ? film.producer : "" }}, Released in {{film ? film.release_date : "" }}
+  </p>
+  <a class="btn btn-primary btn-lg" role="button" routerLink="/films">Back to list</a>
+</div>
+
+

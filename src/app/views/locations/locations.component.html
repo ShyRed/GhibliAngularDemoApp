@@ -1,0 +1,17 @@
+<h1>Locations</h1>
+<table class="table table-striped">
+  <thead>
+    <th>Name</th>
+    <th>Climate</th>
+    <th>Terrain</th>
+    <th>Surface Water</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let location of locations">
+      <td>{{location.name}}</td>
+      <td>{{location.climate}}</td>
+      <td>{{location.terrain}}</td>
+      <td>{{location.surface_water}}</td>
+    </tr>
+  </tbody>
+</table>
